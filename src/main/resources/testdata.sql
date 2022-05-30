@@ -1,0 +1,1 @@
+INSERT INTO "toDoEntry" ("name", "entry", "startTime", "expectedDuration") VALUES ('John', 'Walk Dog', 10:30, 30);
