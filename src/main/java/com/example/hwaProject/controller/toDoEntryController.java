@@ -39,9 +39,9 @@ public class toDoEntryController {
 	}
 
 	// read by id
-	@GetMapping("/getById/{id}")
-	public ResponseEntity<toDoEntry> getById(@PathVariable long id) {
-		return new ResponseEntity<toDoEntry>(service.getById(id), HttpStatus.OK);
+	@GetMapping("/getById/{entryId}")
+	public ResponseEntity<toDoEntry> getById(@PathVariable long entryId) {
+		return new ResponseEntity<toDoEntry>(service.getById(entryId), HttpStatus.OK);
 	}
 	
 	// read by name
@@ -51,14 +51,14 @@ public class toDoEntryController {
 	}
 
 	// Update - Put/Patch Request
-	@PutMapping("/update/{id}")
-	public ResponseEntity<toDoEntry> update(@PathVariable long id, @RequestBody toDoEntry toEntry) {
-		return new ResponseEntity<toDoEntry>(service.update(id, toEntry), HttpStatus.ACCEPTED);
+	@PutMapping("/update/{entryId}")
+	public ResponseEntity<toDoEntry> update(@PathVariable long entryId, @RequestBody toDoEntry toEntry) {
+		return new ResponseEntity<toDoEntry>(service.update(entryId, toEntry), HttpStatus.ACCEPTED);
 	}
 
 	// Delete - Delete Request
-	@DeleteMapping("/delete/{id}")
-	public ResponseEntity<Boolean> delete(@PathVariable long id) {
-		return new ResponseEntity<Boolean>(service.delete(id), HttpStatus.NO_CONTENT);
+	@DeleteMapping("/delete/{entryId}")
+	public ResponseEntity<Boolean> delete(@PathVariable long entryId) {
+		return new ResponseEntity<Boolean>(service.delete(entryId), HttpStatus.NO_CONTENT);
 	}
 }

@@ -13,12 +13,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+//@AllArgsConstructor
 public class toDoEntry {
 	
 	@Id 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private long entryId;
 	
 	@Column(nullable = false)
 	private String name;
@@ -39,6 +39,14 @@ public class toDoEntry {
 		this.startTime = startTime;
 		this.expectedDuration = expectedDuration;
 	}
-
+	
+	public toDoEntry(long entryId, String name, String entry, long startTime, long expectedDuration) {
+		super();
+		this.entryId = entryId;
+		this.name = name;
+		this.entry = entry;
+		this.startTime = startTime;
+		this.expectedDuration = expectedDuration;
+	}
 
 }

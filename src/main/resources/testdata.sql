@@ -1,1 +1,1 @@
-INSERT INTO "toDoEntry" ("name", "entry", "startTime", "expectedDuration") VALUES ('John', 'Walk Dog', 10:30, 30);
+INSERT INTO to_do_entry (name, entry, start_time, expected_duration) VALUES ('John', 'Walk dog', 1030, 30);

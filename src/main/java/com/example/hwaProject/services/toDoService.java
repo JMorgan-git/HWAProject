@@ -26,8 +26,8 @@ public class toDoService {
 	}
 
 	// Read by id
-	public toDoEntry getById(long id) {
-		return repo.findById(id).get();
+	public toDoEntry getById(long entryId) {
+		return repo.findById(entryId).get();
 		//return repo.findById(id).orElseThrow(UserNotFoundException::new);
 		//return repo.findById(id).orElseThrow(() -> new UserNotFoundExceptionWithID(id));
 	}
@@ -38,8 +38,8 @@ public class toDoService {
 	}
 
 	// Update
-	public toDoEntry update(long id, toDoEntry toEntry) {
-		toDoEntry existing = repo.findById(id).get();
+	public toDoEntry update(long entryId, toDoEntry toEntry) {
+		toDoEntry existing = repo.findById(entryId).get();
 		existing.setName(toEntry.getName());
 		existing.setEntry(toEntry.getEntry());
 		existing.setStartTime(toEntry.getStartTime());
@@ -49,8 +49,8 @@ public class toDoService {
 	}
 
 	// Delete
-	public boolean delete(long id) {
-		repo.deleteById(id);
-		return repo.existsById(id);
+	public boolean delete(long entryId) {
+		repo.deleteById(entryId);
+		return repo.existsById(entryId);
 	}
 }
