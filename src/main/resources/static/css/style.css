@@ -1,0 +1,95 @@
+html{
+    font-family:"Lucida Handwriting", cursive;
+}
+body{ 
+    border: #383838;
+    margin: 2vw;;
+}
+
+header{
+    font-size:5em;
+    text-align: center;
+    text-shadow: 2px 2px #1f1f1f;
+    color:rgb(38, 38, 38);
+    opacity: 0.9;
+    margin:1vw;
+    padding:0.5vw;
+}
+.fields{
+    opacity: 0.9;
+    padding:0.5vw;
+    padding-left: 6em;
+    padding-top: 1.48em;
+}
+nav{
+    position: fixed;
+    height: 360px; 
+    width:423.5px;
+
+} 
+h1{
+    font-size: 2em;
+    position: relative;
+    margin:1vw;
+    padding:2px;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 2px 2px #1f1f1f;
+}
+.fill{
+    opacity: 0.85;
+    text-align: left;
+    width: 14vw;
+    height: 14vw;
+    background-color: rgb(255, 146, 107);
+    box-shadow: 2.5px 5px rgb(122, 61, 39);
+    margin: 1vw;
+    border-spacing: 0;
+}
+.eh{
+    background-color: coral;
+    padding: 4px;
+    height: 1.4vw;
+}
+.ho{
+    padding: 4px;
+}
+.he{
+    padding: 4px;
+    height: 1vw;
+}
+aside{
+    float: right;
+    height: 420px; 
+    width: 483.5px;
+}
+p{
+    margin: 4px;
+}
+#results{
+    margin:5px;
+    float: left;
+} 
+#results2{
+    margin:5px;
+    float: left;
+}
+#results3{
+    margin:5px;
+    float: left;
+}
+input{
+    max-width: 130px;
+    color: black;
+    border: 0;
+    background: rgba(255, 165, 0, 0);
+}
+button{
+    font-family: 'Times New Roman', Times;
+    color:white;
+    text-shadow: 1px 1px #383838;
+    border-radius: 5px;
+}
+button:hover{
+    filter: brightness(50%);
+}
