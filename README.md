@@ -48,7 +48,7 @@ Postman ; Manual private testing,
 
 Github ; Repository management,
 
-Jira ; Kanban board and epic/stories,
+Jira ; Kanban board and epic/stories(https://jesse-morgan.atlassian.net/jira/software/projects/HP/boards/2/roadmap?timeline=WEEKS),
 
 
 Gitbash ; Git functionality,
